@@ -9,7 +9,7 @@ public record CategoryDisplayDTO(
         String description
 ) {
 
-    private CategoryDisplayDTO(Category category) {
+    public CategoryDisplayDTO(Category category) {
         this(
                 category.getId(),
                 category.getDescription()
